@@ -1,30 +1,6 @@
-# 生成指令 bundle exec jekyll s
-title: 木灵的炼金工作室 # 站点标题 
+title:  # 站点标题 
 description: | 
-  天知いのり<br/>
-  合法女子高生(误)<br/>
-  北京理工大学在读<br/>
-  劝退学科绝赞转行中<br/>
-  <br/> 
-  C++ / py3 / NLP<br/>
-  <a target = "_blank" href="mailto:master@mail.amachi.com.cn">
-    <i class="fas fa-envelope"></i> 
-  </a>
-  <a target = "_blank" href="https://github.com/AmachiInori">
-    <i class="fab fa-github"></i>
-  </a>
-  <a target = "_blank" href="https://leetcode-cn.com/u/amachi-inori/">
-    <i class="fas fa-chart-bar"></i>
-  </a>
-  <a target = "_blank" href="https://twitter.com/HimemiyaKodama">
-    <i class="fab fa-twitter"></i>
-  </a>
-  <a target = "_blank" href="https://steamcommunity.com/id/Rairaku/">
-    <i class="fab fa-steam"></i>
-  </a> 
-  <a target = "_blank" href="https://www.zhihu.com/people/zhao-yu-feng-33-67">
-    <i class="fab fa-zhihu"></i>
-  </a> 
+  
   <iframe
     width=100%
     height=52
@@ -33,8 +9,8 @@ description: |
     marginwidth="0"
     marginheight="0"
   ></iframe>
-url: https://amachi.com.cn # 你的域名，例如 https://wu-kan.github.io
-tagline: "天知いのり的个人站"
+url:  # 你的域名，例如 https://wu-kan.github.io
+tagline: ""
 baseurl: "" # 假如你的博客是建在某个目录下的，请在这里加上目录名，并且下面配置的所有链接里的`/assets`前也要加，即`/your_baseurl/assets`。这一项结尾不要有'/'。
 
 defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/front-matter-defaults/>功能进行配置
@@ -44,19 +20,10 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
       categories: "_posts"
       verson: |
         <br/><i class="fas fa-info-circle fa-fw"></i> 
-        1.01.60release
+        0
       jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
         default:
           page-foot: 
-            - | #页尾内容
-              <p style="text-align: center;color: #F0F8FF" id="footJP"> 
-                <br/>
-              </p>
-              <p style="text-align: center;color: #F0F8FF"> 
-                <small>Copyright AmachiInori 2017-2020. All Right Reserved.</small><br/>
-                <small>Powered By Jekyll.</small><br/>
-                <small>amachi.com.cn</small></small><br/>
-              </p> 
           body:
             theme-base: theme-base-07 # 可选的主题色包括08~0f，见 <https://github.com/poole/lanyon>
             layout-reverse: true # 开启后sidebar在右边，反之左边
@@ -101,83 +68,6 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 async="async"
                 src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/js/all.min.js"
               ></script>
-            - | # 引入live2d看板娘！不需要可以把这一项都删掉 官方文档https://docs.paul.ren/pio/#/ GH仓库https://github.com/Dreamer-Paul/Pio
-              <link
-                rel="stylesheet"
-                href="https://cdn.jsdelivr.net/gh/Dreamer-Paul/Pio@2.4/static/pio.min.css"
-              />
-              <script
-                async="async"
-                src="https://cdn.jsdelivr.net/combine/gh/Dreamer-Paul/Pio@2.4/static/l2d.min.js,gh/Dreamer-Paul/Pio@2.4/static/pio.min.js"
-                onload='
-                    let pio_container = document.createElement("div");
-                    pio_container.classList.add("pio-container");
-                    pio_container.classList.add("right");
-                    pio_container.style.bottom = "-2rem";
-                    pio_container.style.zIndex = "1";
-                    document.body.insertAdjacentElement("beforeend", pio_container);
-                    let pio_action = document.createElement("div");
-                    pio_action.classList.add("pio-action");
-                    pio_container.insertAdjacentElement("beforeend", pio_action);
-                    let pio_canvas = document.createElement("canvas");
-                    pio_canvas.id = "pio";
-                    pio_canvas.style.width = "14rem";
-                    pio_canvas.width = "600";
-                    pio_canvas.height = "715";
-                    pio_container.insertAdjacentElement("beforeend", pio_canvas);
-                    let pio = new Paul_Pio({
-                      "mode": "fixed",
-                      "hidden": true,
-                      "content": {
-                        "welcome": ["欢迎来到木灵的炼金工作室！", 
-                                    "欢迎您！今天也在营业哦", 
-                                    "今天有好好吃饭吗？",
-                                    "你是来看我的吗？",
-                                    "今天过得怎么样呢？",
-                                    "今天木灵姐姐不在家哦。"],
-                        "link": ["https:\/\/amachi.com.cn/about/"],
-                        "skin": ["要看看我的其他衣服吗？"],
-                        "touch": ["你好呀。",  
-                                  "嗯？", 
-                                  "你想要找木灵姐姐吗？", 
-                                  "你要一起玩吗？",
-                                  "你是来看我的吗？",
-                                  "愿精灵指引你。"],
-                        "hidden": true,
-                        "referer": "欢迎您从 %t 远道而来"
-                        "close": "那么，再见呀。",
-                        "custom": [{
-                          "selector": "a",
-                          "type": "link",
-                          "text": "关于我的家.."
-                        }, {
-                          "selector": ".sidebar-toggle",
-                          "text": "打开侧边栏叭~"
-                        }, {
-                          "selector": ".effect-info",
-                          "text": "哇，你发现了什么！"
-                        }, {
-                          "selector": "#sidebar-search-input",
-                          "text": "想搜索什么呢？很多干货哦！"
-                        }, {
-                          "selector": "#toc",
-                          "text": "这是目录~"
-                        }, {
-                          "selector": ".page-title",
-                          "text": "这是标题~"
-                        }, {
-                          "selector": ".v",
-                          "text": "评论没有审核，要对自己的发言负责哦。"
-                        }]
-                      },
-                      "model": [
-                        "https:\/\/cdn.jsdelivr.net/gh/AmachiInori/PioLive2D/Goddess Costume White.model.json",
-                        "https:\/\/cdn.jsdelivr.net/gh/AmachiInori/PioLive2D/School 2017 Costume Yellow.model.json",
-                        "https:\/\/cdn.jsdelivr.net/gh/AmachiInori/PioLive2D/pajamas-costume.model.json",
-                        "https:\/\/cdn.jsdelivr.net/gh/AmachiInori/PioLive2D/Dress Costume Brown.model.json",
-                        "https:\/\/cdn.jsdelivr.net/gh/AmachiInori/PioLive2D/default-costume.model.json"]
-                    });'
-              ></script>
             - | # 百度爬虫推送，http站点使用 http://push.zhanzhang.baidu.com/push.js
               <script
                 src='https://zz.bdstatic.com/linksubmit/push.js'
@@ -202,7 +92,6 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                   background-repeat: no-repeat;
                   background-attachment: fixed;
                   background-image: url(https://i.loli.net/2020/08/29/8cqyVo1XeDBHUv4.jpg); /*PC端 此URL可更换*/ 
-              /*  background-image: url(https://i.loli.net/2020/08/20/AIJC7U2enb4PpBG.jpg); */
                 }
                 @media (max-aspect-ratio: 2400/1850) {
                   .wrap {
@@ -220,7 +109,6 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                   .wrap:before {
                     content: "";
                     background: url(https://i.loli.net/2020/08/29/aitMZjLAnhDWx97.png) no-repeat; /*移动端，此URL可更换*/
-                  /*background: url(https://i.loli.net/2020/08/20/24jzy8IpQaKBMnH.jpg) no-repeat;*/ /*旧的*/ 
                     background-size: cover;
                     position: fixed;
                     top: 0;
@@ -334,9 +222,6 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
               - title: '<i class="fas fa-archive fa-fw"></i> 时间线'
                 href: /archive/
                 target: _self
-              - title: '<i class="fas fa-coffee fa-fw"></i> 打赏'
-                href: /merger/
-                target: _blank
               - title: '<i class="fas fa-users fa-fw"></i> 友链'
                 href: /friends/
                 target: _self
@@ -480,7 +365,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                     document.getElementById("run_time_hour"),
                     document.getElementById("run_time_minute"),
                     document.getElementById("run_time_second"),
-                    "07/07/2018 15:52:00")
+                    "02/09/2020 12:00:00")
                   </script>
                 </div>
               - | # 不蒜子页面统计，看不懂可不改
@@ -648,8 +533,8 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 onload='
                   new Valine({
                     "el": document.getElementsByClassName("v")[0],
-                    "appId": "N9VL7AzPwW97oVzqv3QhAjvj-gzGzoHsz",
-                    "appKey": "7FHWwHE8NqSizTUlFs1814wD",
+                    "appId": "",
+                    "appKey": "",
                     "placeholder": "在这里评论吧！填写邮箱可以获得 Gravatar 头像和回复通知哦",
                     "requiredFields": ["nick","mail"],
                     "visitor": true,
@@ -677,16 +562,6 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
             enable: true
             prepend: <i class="fas fa-tag fa-fw"></i>
           copyright:
-            | # 我的文章使用最宽松的知识共享协议：署名 4.0 国际 (CC BY 4.0)。您可以自由地：共享 — 在任何媒介以任何形式复制、发行本作品；演绎 — 修改、转换或以本作品为基础进行创作；在任何用途下，甚至商业目的。只要你遵守许可协议条款，许可人就无法收回你的这些权利。惟须遵守下列条件：署名 — 您必须给出适当的署名，提供指向本许可协议的链接，同时标明是否（对原始作品）作了修改。您可以用任何合理的方式来署名，但是不得以任何方式暗示许可人为您或您的使用背书。
-            <br/>
-            <i class="fab fa-creative-commons-by fa-fw"></i>
-            您可以自由地共享和演绎本文稿, 只需遵守<a
-              target = "_blank"
-              href="https://creativecommons.org/licenses/by/4.0/deed.zh"
-              rel="license">开源协议[CC By 4.0]</a>
-            <br/>
-            <i class="fas fa-coffee fa-fw"></i>
-            如果这篇文章帮助到你, 可以<a target = "_blank" href="/merger/">请我喝一杯咖啡~</a>
         tags:
           pie_chart: # 显示一个标签的饼状统计图，需要引入 mermaid
             enable: false
@@ -708,9 +583,9 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
             - | # 需要配置的变量见<https://merger.justhx.com/cn/docs/configure>
               <script>
                 var usage = "payment";
-                var wechat = "wxp://f2f0DqZQIyhKtO2o4RF1AzF6YdH0fDtLiR9U";
-                var alipay = "HTTPS://QR.ALIPAY.COM/FKX06578BU09LJJPDFUU88";
-                var paypal = "https://paypal.me/amachi0495";
+                var wechat = "";
+                var alipay = "";
+                var paypal = "";
                 var myname = "Amachi";
                 var profile = "https://i.loli.net/2020/08/10/KazmEAxyIYkZXMU.png";
                 var multilingual = false;
@@ -840,7 +715,7 @@ readme_index: # 缺失index.md和index.html时，使用README.md代替之
 
 webmaster_verifications: # <https://jekyll.github.io/jekyll-seo-tag/usage/> <https://github.com/jekyll/jekyll-seo-tag/>
 #  google: YIKi1rBnyUaS-DMYiluseI5kZzTwjCkTFmKkSkMZDJk
-  baidu: 3ZsfJqqeUIEJnPGZ
+  baidu: 
 
 permalink: /:categories/:year-:month-:day-:title/ #生成文章的地址格式，我希望它和_posts目录下的格式一样
 # timezone: Asia/Shanghai # 解决githubpage显示时间不正确的问题，见<https://www.iana.org/time-zones>
